@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: binance
+  ai:
+    mcp:
+      server:
+        name: binance-alert-mcp
+        version: 1.0.0
+logging:
+  level:
+    root: info
+
+alert:
+  binance-ws-url: wss://stream.binance.com:9443/ws/ethusdt@ticker
+  qq-bot-api: ${QQ_BOT_API:http://localhost:3000}
+  bot-qq: ${BOT_QQ:0}
+  qq-user-id: ${QQ_USER_ID:0}
+  napcat-token: ${NAPCAT_TOKEN:}
+  cooldown-seconds: 300
